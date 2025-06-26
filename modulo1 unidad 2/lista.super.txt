@@ -6,4 +6,8 @@ golosinas
 verduras
 
 pan
+<<<<<<< HEAD
 fruit
+=======
+fruta
+>>>>>>> b93b604fb8255ff2f4fb126034568c013733654b
