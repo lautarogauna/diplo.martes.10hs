@@ -6,4 +6,4 @@ golosinas
 verduras
 
 pan
-fruta
+fruit
