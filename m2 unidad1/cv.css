@@ -1,6 +1,6 @@
 h1 {
     color: yellow;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
     background-color: blue;
     text-align: center;
     font-size: 50px;
@@ -8,7 +8,7 @@ h1 {
 
 h2 {
     color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Oswald", sans-serif;
 }
 
 img {
@@ -17,33 +17,49 @@ img {
 }
 
 #lista {
-    width: 200px;
+    width: 500px;
     height: 200px;
     background-color: yellowgreen;
     border: 2px solid black;
     padding: 20px;
     box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(42, 155, 70, 0.56) 0%, rgba(87, 199, 133, 1) 50%, rgba(110, 202, 125, 1) 57%, rgba(237, 221, 83, 1) 100%);
+border-radius: 20px 0px 50px;
+ box-shadow: 10px 20px 5px black;
+ column-count: 3;
+    column-gap: 60px;
+    font-family: "Oswald", sans-serif;
+  
+
 }
 
 #list {
-    width: 200px;
-    height: 180px;
+    width: 500px;
+    height: 200px;
     background-color: yellow;
     border: 2px solid black;
     padding: 20px;
     box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(42, 155, 70, 0.56) 0%, rgba(87, 199, 133, 1) 50%, rgba(110, 202, 125, 1) 57%, rgba(237, 221, 83, 1) 100%);
+border-radius: 20px 0px 50px;
+ box-shadow: 10px 20px 5px black;
+ column-count: 3;
+    column-gap: 60px;
+    font-family: "Oswald", sans-serif;
+   
 }
 
 li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Oswald", sans-serif;
     font-size: 30px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
     color: black;
 }
+
