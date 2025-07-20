@@ -1,7 +1,7 @@
 h1 {
     color: red;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: yellow;
+    background: linear-gradient(90deg, rgba(42, 155, 70, 0.56) 0%, rgba(87, 199, 133, 1) 50%, rgba(110, 202, 125, 1) 57%, rgba(237, 221, 83, 1) 100%);
     text-align: center;
 }
 
@@ -11,6 +11,8 @@ h2 {
     color: blue;
     text-transform: uppercase;
     /*color tipo*/
+    background: linear-gradient(90deg, rgba(42, 155, 70, 0.56) 0%, rgba(87, 199, 133, 1) 50%, rgba(110, 202, 125, 1) 57%, rgba(237, 221, 83, 1) 100%);
+border-radius: 20px 0px 50px;
 }
 
 p {
@@ -22,6 +24,8 @@ p {
     color: green;
     font-weight: bold;
     font-style: italic;
+    column-count: 5;
+    column-gap: 60px;
 }
 
 #rojo {
@@ -31,11 +35,14 @@ p {
     border: 2px solid black;
     padding: 20px;
     box-sizing: border-box;
-    
+    box-shadow: 10px 20px 5px black;
+
 }
+
 #azul {
     width: 200px;
     height: 400px;
     background-color: navajowhite;
     margin-left: 120px;
+    box-shadow: 10px 20px 5px black;
 }
