@@ -1,0 +1,43 @@
+#contenedor {
+    border: 1px solid black;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+#contenedor>div:first-child {
+    border: 1px solid black;
+    background-color: red;
+    width:15% ;
+    height: 200px; 
+    text-align: center;
+    align-content: center;
+    color: white;
+
+}
+
+#contenedor>div:nth-child(2) {
+    border: 1px solid black;
+    background-color: blue;
+    width: 15%;
+   height: 200px; 
+    text-align: center;
+    align-content: center;
+    color: white;
+
+}
+
+#contenedor>div:last-child {
+    border: 1px solid black;
+    background-color: green;
+    width: 15%;
+   height: 200px; 
+    text-align: center;
+    align-content: center;
+    color: white;
+}
