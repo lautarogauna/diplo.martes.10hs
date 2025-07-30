@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Optimizando con CSS</title>
+<style>
+  body {
+    background-color: #2f2e27;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* centra horizontalmente el container */
+  }
+  .contenedor {
+    background-color: #8aa092;
+    width: 900px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .menu {
+    background-color: #ca3a0e;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  .menu:hover {
+    background-color: #a3320c;
+  }
+  .menu p {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 3px 0;
+    transition: color 0.3s ease;
+  }
+  .menu p:hover {
+    color: #ffd966;
+  }
+  .content1 {
+    background-color: #f3f0c4;
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  .content1:hover {
+    background-color: #e6e3a7;
+  }
+  .content1 h2 {
+    margin-top: 0;
+  }
+  .content2 {
+    background-color: #c6c0a1;
+    width: 150px;
+    padding: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  .content2:hover {
+    background-color: #b0aa86;
+  }
+  .content2 h3 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+  <div class="menu">
+    <p href="#">Enlace 1</p>
+    <p href="#">Enlace 2</p>
+    <p href="#">Enlace 3</p>
+  </div>
+  <div class="content1">
+    <h2>Ejemplo de Media Queries</h2>
+    <p>El layout de esta pagina se adapta segun el dispositivo que utilices, puedes usar tu propio smartphone o un emulador</p>
+  </div>
+  <div class="content2">
+    <h3>Contenido adicional</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+  </div>
+</div>
+
+</body>
+</html>
