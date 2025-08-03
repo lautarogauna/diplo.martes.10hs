@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frutas Congeladas - Delicias Naturales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url('pagina imagen.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: black;
+        }
+
+        .card,
+        .bg-light,
+        .navbar,
+        footer,
+        .carousel-item>div {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            color: black !important;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: black !important;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        span,
+        li,
+        label {
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🍓 Frutas Congeladas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                            data-bs-target="#modalContacto">Contacto</a></li>
+                </ul>
+                <form class="d-flex" role="search"
+                    onsubmit="event.preventDefault(); alert('Función de búsqueda aún no implementada');">
+                    <input class="form-control me-2" type="search" placeholder="Buscar fruta..."
+                        aria-label="Buscar fruta" />
+                    <button class="btn btn-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center my-5">
+        <h1 class="display-4">Bienvenido a Delicias Naturales</h1>
+        <p class="lead">Tu tienda de frutas congeladas saludables y listas para consumir</p>
+        <a href="#productos" class="btn btn-success btn-lg">Ver Productos</a>
+    </div>
+    <div id="carouselDestacados" class="carousel slide container my-5" data-bs-ride="carousel"
+        aria-label="Carrusel de destacados">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="p-5 rounded">
+                    <h3>🍓 Frutillas Premium</h3>
+                    <p>La mejor selección del sur de Chile.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="p-5 rounded">
+                    <h3>🥭 Mango para Smoothies</h3>
+                    <p>Perfecto para tus recetas tropicales.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="p-5 rounded">
+                    <h3>🫐 Arándanos Antioxidantes</h3>
+                    <p>Ricos en beneficios para tu salud.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <div class="container text-center mb-5">
+        <div class="row mb-3">
+            <div class="col border p-4 bg-light">
+                <h5>🍍 100% Natural</h5>
+                <p>Sin azúcares añadidos ni conservantes.</p>
+            </div>
+            <div class="col border p-4 bg-light">
+                <h5>❄️ Ultracongelado</h5>
+                <p>Preserva sabor, textura y nutrientes.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border p-4 bg-light">
+                <h5>📦 Envío Rápido</h5>
+                <p>Envíos en 24h con cadena de frío.</p>
+            </div>
+            <div class="col border p-4 bg-light">
+                <h5>🌱 Vegano y Orgánico</h5>
+                <p>Ideal para dietas saludables.</p>
+            </div>
+            <div class="col border p-4 bg-light">
+                <h5>💳 Pago Seguro</h5>
+                <p>Visa, Mastercard, y transferencias.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="productos">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/300x200/?frozen-strawberries" class="card-img-top"
+                        alt="Frutillas congeladas" />
+                    <div class="card-body">
+                        <h5 class="card-title">Frutillas Congeladas</h5>
+                        <p class="card-text">Ideales para smoothies, postres o snacks naturales.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bolsa de 1kg</li>
+                        <li class="list-group-item">Origen: Patagonia</li>
+                        <li class="list-group-item">Precio: $5.000 arg</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success" data-bs-toggle="tooltip" title="Haz clic para comprar"
+                            onclick="mostrarToast()">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/300x200/?frozen-mango" class="card-img-top"
+                        alt="Mango congelado" />
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Congelado</h5>
+                        <p class="card-text">Dulce, jugoso y siempre listo para usar.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bolsa de 1kg</li>
+                        <li class="list-group-item">Origen: Perú</li>
+                        <li class="list-group-item">Precio: $6.000 arg</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success" data-bs-toggle="tooltip" title="Haz clic para comprar"
+                            onclick="mostrarToast()">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://source.unsplash.com/300x200/?frozen-blueberries" class="card-img-top"
+                        alt="Arándanos congelados" />
+                    <div class="card-body">
+                        <h5 class="card-title">Arándanos Congelados</h5>
+                        <p class="card-text">Ricos en antioxidantes. Perfectos para repostería o batidos.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bolsa de 500g</li>
+                        <li class="list-group-item">Origen: Chile</li>
+                        <li class="list-group-item">Precio: $4.500 arg</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-success" data-bs-toggle="tooltip" title="Haz clic para comprar"
+                            onclick="mostrarToast()">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion container my-5" id="faq">
+        <h2 class="mb-3 text-center">Preguntas Frecuentes</h2>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cómo se conservan las frutas congeladas?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faq">
+                <div class="accordion-body">
+                    Deben mantenerse a -18°C para conservar sabor y nutrientes.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <h3>Progreso de Ventas</h3>
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <h3 class="mb-3">Dónde estamos</h3>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=..." style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Mapa ubicación"></iframe>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">© 2025 Frutas Congeladas - Delicias Naturales</p>
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="#" class="text-white me-3">Instagram</a>
+            <a href="#" class="text-white">Términos y condiciones</a>
+        </div>
+    </footer>
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContactoLabel">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formContacto">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toastCompra" class="toast align-items-center text-bg-success border-0" role="alert" aria-live
